@@ -1,0 +1,43 @@
+*,
+::before,::after{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+}
+.row{
+    display: flex;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    background-color: #FFF;
+    margin: 1rem 1rem;
+}
+
+.header{
+    justify-content: space-between;
+
+}
+.header img{
+    padding-top: 0.5rem;
+    width: 50%;
+}
+.header button{
+    background-color: #13183F;
+    color: #FFF;
+    font-size:0.7rem;
+    font-weight: 5700;
+    padding: 0.5rem 1.5rem;
+    border-radius:20px;
+    border: #13183F;
+    text-align: center;
+}
+
