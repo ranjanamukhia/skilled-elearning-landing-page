@@ -18,7 +18,7 @@ img{
 }
 
 .container{
-    background-color: #FFF;
+    background-color:#FFFFFF;
     margin: 1rem 1rem;
 }
 
@@ -40,4 +40,99 @@ img{
     border: #13183F;
     text-align: center;
 }
+.introduction h1{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align:left;
+  margin-bottom: 1rem;
+}
+.introduction p {
+    font-size: 0.7rem;
+    color: #83869A;
+    opacity: 70%;
+    margin-bottom: 1rem;
 
+}
+.introduction button{
+
+    font-size:0.7rem;
+    font-weight: 5700;
+    padding: 0.5rem 1.5rem;
+    border-radius:20px;
+    background-image: linear-gradient(to bottom, #ff6f48, #F02aa6 );
+    text-align: center;
+    border: none;
+
+}
+
+.check-out-courses{
+    background-image: linear-gradient(to bottom, #ff6f48, #F02aa6 );
+    color: #FFF;
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+   
+}
+.courses{
+    margin-bottom: 3rem;
+    border: 2px solid blue;
+}
+
+.course{
+ margin-top: 0.5rem;
+ padding-left: 1rem;
+ background-color: #FFFFFF;
+ border: #FFFFFF 2px solid;
+ border-radius: 20px;
+ margin-bottom: 1rem;
+ border: 2px solid green;
+ padding-bottom: 2rem;
+
+}
+
+.course img {
+    max-width: 10%;
+}
+.course h3{
+    margin-top: 0.5rem;
+   font-size: 0.7rem;
+}
+.course p{
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    color: #83869A;
+    opacity: 60%;
+    margin-bottom: 0.5rem;
+
+}
+.course a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: #F02aa6;
+    font-weight: 700;
+    
+}
+.footer{
+    background-color: #13183F;
+    padding: 1.5rem 1rem;
+}
+.footer{
+    justify-content: space-between;
+
+}
+.footer img{
+    padding-top: 0.5rem;
+    width: 50%;
+}
+
+.footer button{
+    
+    font-size:0.7rem;
+    font-weight: 5700;
+    padding: 0.5rem 1.5rem;
+    border-radius:20px;
+    background-image: linear-gradient(to bottom, #4851ff, #F02aa6 );
+    text-align: center;
+    border: none;
+}
