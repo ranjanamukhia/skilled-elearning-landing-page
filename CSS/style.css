@@ -17,7 +17,7 @@ body{
     max-width: 100%;
     padding: 0 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+   
    
     grid-gap: 10px;
     grid-template-areas:
@@ -26,7 +26,7 @@ body{
       "hero-image"
       "big-pink-div"
       "content"
-      "footer";
+      ;
   }
 
   .header {
@@ -34,6 +34,7 @@ body{
     grid-area: header;
     display: flex;
     justify-content: space-between;
+    padding:0.5rem 1rem;
   }
     
     .header img{
@@ -54,6 +55,7 @@ body{
 
     .introduction{
         grid-area:intro;
+       
     }
     .introduction h1{
         margin-top: 1rem;
@@ -83,6 +85,11 @@ body{
 
     .members-and-courses-section{
         grid-area: hero-image;
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+        
+        
     }
       .check-out-courses{
         grid-area:big-pink-div;
@@ -93,17 +100,18 @@ body{
         border-radius: 10px;
        
     }
+    
    
     
     .course{
+        
      margin-top: 0.5rem;
      padding-left: 1rem;
      background-color: #FFFFFF;
      
      border-radius: 10px;
      margin-bottom: 1rem;
-    
-     padding-bottom: 2rem;
+
     
     }
     
@@ -130,7 +138,7 @@ body{
         
     }
     .footer{
-        grid-area: footer;
+       
         background-color: #13183F;
         padding: 1.5rem 1rem;
         display: flex;
@@ -139,7 +147,7 @@ body{
     
     .footer img{
         padding-top: 0.5rem;
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
     
@@ -160,13 +168,21 @@ body{
 
 
   .container { 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    
+    
+    
     grid-template-areas:
-    "intro hero-image"
-     "intro hero-image"
-     "big-pink-div content";
+   
+    "intro hero-image" 
+ "big-pink-div content"
+ 
+ 
+;
   }
+  .members-and-courses-section{
+        grid-area: hero-image;
+    }
 
     
 
@@ -175,14 +191,22 @@ body{
 
 @media (min-width: 1000px) {
     .container  { grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+ 
+    
         grid-template-areas:
         
-        "intro intro hero-image"
+        "intro intro  hero-image"
         "big-pink-div content content"
-       
-        ;
+        "content content content";
     
+    }
+    .members-and-courses-section{
+        grid-area: hero-image;
+        max-width: 100%;
+        height: auto;
+        
+        
+        
     }
   }
 
