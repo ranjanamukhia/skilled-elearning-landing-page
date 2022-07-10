@@ -20,12 +20,18 @@ main{
     padding: 0 1rem;
     display: grid;
     grid-gap: 10px;
-    
+    grid-template-areas:
+      
+      "intro"
+      "hero-image"
+      "big-pink-div"
+      
+      ;
   }
 
   .header {
     
-   
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     padding:0.5rem 1rem;
