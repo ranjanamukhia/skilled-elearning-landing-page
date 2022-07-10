@@ -10,6 +10,9 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
 }
+main{
+    padding:0 1rem;
+}
 
 .container {
 
@@ -71,7 +74,8 @@ body{
       .introduction button{
 
         font-size:0.7rem;
-        font-weight: 5700;
+        font-weight: 500;
+        color: #FFF;
         padding: 0.5rem 1.5rem;
         border-radius:20px;
         background-image: linear-gradient(to bottom, #ff6f48, #F02aa6 );
@@ -81,7 +85,7 @@ body{
     }
 
     .members-and-courses-section{
-        grid-area: hero-image;
+        
         max-width: 100%;
         height: auto;
         overflow: hidden;
@@ -89,18 +93,18 @@ body{
         
     }
       .check-out-courses{
-        grid-area:big-pink-div;
+        
         background-image: linear-gradient(to bottom, #ff6f48, #F02aa6 );
         color: #FFF;
         font-size: 1rem;
-        padding: 1.5rem 2rem;
+        padding: 1rem 2rem;
         border-radius: 10px;
        
     }
     
    
     
-    .course{
+    .course1,.course2,.course3,.course4,.course5{
         
      margin-top: 0.5rem;
      padding-left: 1rem;
@@ -108,18 +112,19 @@ body{
      
      border-radius: 10px;
      margin-bottom: 1rem;
+     padding-bottom: 2rem;
 
     
     }
     
-    .course img {
+    .course1 img,.course2 img,.course3 img,.course4  img,.course5 img {
         max-width: 10%;
     }
-    .course h3{
+    .course1 h3,.course2 h3,.course3 h3,.course4 h3,.course5 h3{
         margin-top: 0.5rem;
-       font-size: 0.7rem;
+       font-size: 0.8rem;
     }
-    .course p{
+    .course1 p,.course2 p,.course3 p,.course4 p,.course5 p{
         margin-top: 0.5rem;
         font-size: 0.7rem;
         color: #83869A;
@@ -127,7 +132,7 @@ body{
         margin-bottom: 0.5rem;
     
     }
-    .course a{
+    .course1 a,.course2 a,.course3 a,.course4 a,.course5 a{
         text-decoration: none;
         font-size: 0.7rem;
         color: #F02aa6;
@@ -140,6 +145,7 @@ body{
         padding: 1.5rem 1rem;
         display: flex;
     justify-content: space-between;
+    margin-top: 3rem;
     }
     
     .footer img{
@@ -165,6 +171,9 @@ body{
 
 @media (min-width: 800px) {
 
+    main{
+        padding:0 3rem;
+    }
 
   .container { 
     grid-template-columns: repeat(2,1fr); 
@@ -208,6 +217,10 @@ body{
 }
 
 @media (min-width: 1000px) {
+
+    main{
+        padding:0 5rem;
+    }
     .container 
     {   grid-template-columns: repeat(3,1fr);
         grid-auto-rows: minmax(100px, auto);
