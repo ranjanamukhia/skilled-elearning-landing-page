@@ -32,13 +32,13 @@ main{
       ;
   }
 
-  /* .header {
+  .header {
     
     grid-area: header;
     display: flex;
     justify-content: space-between;
     padding:0.5rem 1rem;
-  } */
+  }
     
     .header img{
         padding-top: 0.5rem;
