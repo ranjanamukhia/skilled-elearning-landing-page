@@ -9,15 +9,18 @@ body{
     background-color: #F2F2F2;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 main{
-    padding:0 1rem;
+    padding:0 3rem;
+   
+   
 }
 
 .container {
 
     max-width: 100%;
-    padding: 0 1rem;
+    
     display: grid;
     grid-gap: 10px;
     grid-template-areas:
@@ -29,20 +32,20 @@ main{
       ;
   }
 
-  .header {
+  /* .header {
     
     grid-area: header;
     display: flex;
     justify-content: space-between;
     padding:0.5rem 1rem;
-  }
+  } */
     
     .header img{
         padding-top: 0.5rem;
        max-width:100%;
        height:auto;
     }
-    .header button{
+    .btn{
         background-color: #13183F;
         color: #FFF;
         font-size:0.7rem;
@@ -53,13 +56,11 @@ main{
         text-align: center;
     }
 
-    .introduction{
-        grid-area:intro;
-       
-    }
+    
     .introduction h1{
+      
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 3rem;
         font-weight: 700;
         text-align:left;
         margin-bottom: 1rem;
@@ -84,11 +85,19 @@ main{
     
     }
 
-    .members-and-courses-section{
+    .introduction button:hover{
+      opacity: 60%;
+      cursor: pointer;
+    }
+
+    .hero-image{
         
         max-width: 100%;
         height: auto;
-        overflow: hidden;
+        position: relative;
+        right:4rem;
+        
+       
         
         
     }
@@ -119,6 +128,7 @@ main{
     
     .course1 img,.course2 img,.course3 img,.course4  img,.course5 img {
         max-width: 10%;
+        
     }
     .course1 h3,.course2 h3,.course3 h3,.course4 h3,.course5 h3{
         margin-top: 0.5rem;
@@ -138,6 +148,11 @@ main{
         color: #F02aa6;
         font-weight: 700;
         
+    }
+
+    .course1 a:hover,.course2 a:hover,.course3 a:hover,.course4 a:hover,.course5 a:hover{
+      opacity: 60%;
+      cursor: pointer;
     }
     .footer{
        
@@ -164,6 +179,12 @@ main{
         text-align: center;
         border: none;
     }
+    .footer button:hover{
+     
+      cursor: pointer;
+      background-image: #FFA7C3;
+      color: #FFFFFF;
+    }
 
     
 
@@ -181,11 +202,37 @@ main{
    
  
   }
+
+  .introduction{
+    width:40%;
+     display: flex;
+     flex-direction: column;
+     height: 30rem;
+     justify-content: space-between;
+     
+  }
+
+  .hero-image{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left:50%;
+   bottom: 5%;
+  }
+
+  .header {
+    
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    padding:0.5rem 1rem;
+  
+  }
   .introduction {
     grid-column: 1 ;
     grid-row: 1;
   }
-  .members-and-courses-section {
+  .hero-image {
     grid-column: 2;
     grid-row: 1 ;
   }
@@ -222,17 +269,58 @@ main{
         padding:0 5rem;
     }
     .container 
-    {   grid-template-columns: repeat(3,1fr);
+
+    {  
+      margin-top: 10rem;
+       grid-template-columns: repeat(3,1fr);
         grid-auto-rows: minmax(100px, auto);
         
     
+    }
+
+    .introduction{
+      width:40%;
+       display: flex;
+       flex-direction: column;
+       height: 30rem;
+       justify-content: space-between;
+      align-items: center;
+       
+    }
+
+    .intro-text{
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+
     }
 
     .introduction {
         grid-column: 1 / 3;
         grid-row: 1;
       }
-      .members-and-courses-section {
+
+      .hero-image{
+        
+        max-width: 100%;
+        height: auto;
+        
+        position: absolute;
+        left:50%;
+        top:0.5%;
+       
+        
+        
+    }
+
+    .header {
+    
+      grid-area: header;
+      display: flex;
+      justify-content: space-between;
+      padding:0.5rem 1rem;
+    }
+      .hero-image {
         grid-column: 3/ 4;
         grid-row: 1 ;
       }
