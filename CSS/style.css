@@ -11,6 +11,14 @@ body{
     font-size: 16px;
     overflow-x: hidden;
 }
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+
 main{
     padding:0 3rem;
    
@@ -44,6 +52,10 @@ main{
         padding-top: 0.5rem;
        max-width:100%;
        height:auto;
+
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
     }
     .btn{
         background-color: #13183F;
@@ -56,25 +68,35 @@ main{
         text-align: center;
     }
 
+    .introduction{
+       
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 66px;
+      
+    }
+
     
     .introduction h1{
-      
-        margin-top: 1rem;
+
+    
+      line-height: 5.04rem;
         font-size: 3rem;
         font-weight: 700;
-        text-align:left;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
       .introduction p {
-          font-size: 0.7rem;
+
+        font-size: 1rem;
+       line-height: 2.6rem;
           color: #83869A;
           opacity: 70%;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
       
       }
       .introduction button{
 
-        font-size:0.7rem;
+        font-size:1rem;
         font-weight: 500;
         color: #FFF;
         padding: 0.5rem 1.5rem;
@@ -103,11 +125,13 @@ main{
     }
       .check-out-courses{
         
-        background-image: linear-gradient(to bottom, #ff6f48, #F02aa6 );
+        padding: 24px 29px 32px 28px;
         color: #FFF;
-        font-size: 1rem;
-        padding: 1rem 2rem;
-        border-radius: 10px;
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  font-size: 1rem;
+  line-height: 3.2rem;
+  box-shadow: none;
+  border-radius: 10px;
        
     }
     
@@ -115,38 +139,46 @@ main{
     
     .course1,.course2,.course3,.course4,.course5{
         
-     margin-top: 0.5rem;
-     padding-left: 1rem;
-     background-color: #FFFFFF;
-     
-     border-radius: 10px;
-     margin-bottom: 1rem;
-     padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 24px 29px 32px 28px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 10px;
+  margin-bottom: 40px;
 
     
     }
     
     .course1 img,.course2 img,.course3 img,.course4  img,.course5 img {
-        max-width: 10%;
+      position: absolute;
+      top: -24px;
+      left: 28px;
         
     }
     .course1 h3,.course2 h3,.course3 h3,.course4 h3,.course5 h3{
-        margin-top: 0.5rem;
-       font-size: 0.8rem;
+      margin: 24px 0 16px;
+      font-size: 1.5rem;
+      line-height: 2.52rem;
     }
     .course1 p,.course2 p,.course3 p,.course4 p,.course5 p{
         margin-top: 0.5rem;
-        font-size: 0.7rem;
+        font-size: 1rem;
         color: #83869A;
         opacity: 60%;
         margin-bottom: 0.5rem;
+        line-height: 1.8rem;
     
     }
     .course1 a,.course2 a,.course3 a,.course4 a,.course5 a{
-        text-decoration: none;
-        font-size: 0.7rem;
-        color: #F02aa6;
-        font-weight: 700;
+      margin-top: auto;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+      color: #F74780;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.2s ease-out;
         
     }
 
@@ -171,7 +203,7 @@ main{
     
     .footer button{
         
-        font-size:0.7rem;
+        font-size:1rem;
         font-weight: 700;
         padding: 0.5rem 1.5rem;
         border-radius:20px;
@@ -216,8 +248,9 @@ main{
     max-width: 100%;
     height: auto;
     position: absolute;
-    left:50%;
-   bottom: 5%;
+    right:-15rem;
+   bottom: 1rem;
+    background-repeat: no-repeat;
   }
 
   .header {
@@ -227,6 +260,10 @@ main{
     justify-content: space-between;
     padding:0.5rem 1rem;
   
+  }
+
+  .check-out-courses{
+    padding: 56px 21px 0px 32px;
   }
   .introduction {
     grid-column: 1 ;
@@ -306,11 +343,18 @@ main{
         height: auto;
         
         position: absolute;
-        left:50%;
-        top:0.5%;
+        bottom: -1rem;
+        right: -15rem;
        
         
         
+    }
+    .check-out-courses{
+     
+        padding: 64px 32px 0px 32px;
+        font-size: 1.4rem;
+        line-height: 4rem;
+      
     }
 
     .header {
